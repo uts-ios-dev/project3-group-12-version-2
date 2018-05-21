@@ -60,7 +60,10 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
         var lineChartEntry  = [ChartDataEntry]()
 
         //here is the for loop
-        for i in 0..<userWeightHistory.count {
+        for i in userWeightHistory.count - 10..<userWeightHistory.count {
+            if i < 0 {
+                continue
+            }
             let value = ChartDataEntry(x: Double(i), y: Double(userWeightHistory[i].weight)) //set the X and Y status in a data chart entry
             lineChartEntry.append(value)
         }
