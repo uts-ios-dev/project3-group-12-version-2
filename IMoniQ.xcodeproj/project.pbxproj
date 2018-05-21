@@ -68,7 +68,7 @@
 		F5DAA0A620B282C0000290BD /* PrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewController.swift; sourceTree = "<group>"; };
 		F5DAA0AC20B283F4000290BD /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
 		F5DAA0AD20B283F4000290BD /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
-		F5DAA0B120B287DD000290BD /* HealthMonitorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthMonitorDetailViewController.swift; path = "../../../project3-group-12/IMoniQ/Controllers/HealthMonitorDetailViewController.swift"; sourceTree = "<group>"; };
+		F5DAA0B120B287DD000290BD /* HealthMonitorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthMonitorDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
