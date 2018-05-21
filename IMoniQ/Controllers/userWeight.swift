@@ -24,7 +24,7 @@ struct userWeight: Codable {
         }
     }
     
-    func updateUserPainHistory(currentWeight: Float)
+    func updateUserWeightHistory(currentWeight: Float)
     {
         let defaults = UserDefaults.standard
         let currentDate = Date()
