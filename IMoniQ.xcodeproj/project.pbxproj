@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342B6A8B7A012E10AC59E8DF /* Pods_IMoniQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */; };
+		3E93BF3220B1653A00A33ED9 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 3E93BF3120B1653900A33ED9 /* Classes */; };
+		3E93BF3420B16CFD00A33ED9 /* userPainv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */; };
+		F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F514F0EE20AA53E4001C99C1 /* HealthKit.framework */; };
+		F514F0F920AA5415001C99C1 /* SleepMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F220AA5414001C99C1 /* SleepMonitorViewController.swift */; };
+		F514F0FA20AA5415001C99C1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F320AA5414001C99C1 /* WelcomeViewController.swift */; };
+		F514F0FC20AA5415001C99C1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F520AA5415001C99C1 /* MenuViewController.swift */; };
+		F514F0FE20AA5415001C99C1 /* DailyActivityMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F0F720AA5415001C99C1 /* DailyActivityMonitorViewController.swift */; };
+		F514F10D20AA594D001C99C1 /* HealthMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F10C20AA594D001C99C1 /* HealthMonitorViewController.swift */; };
+		F514F11120AA59B7001C99C1 /* WeightMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */; };
+		F514F11320AA5A8D001C99C1 /* PrescriptionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */; };
+		F588DFCF20B1DA6B004B9606 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F588DFCE20B1DA6B004B9606 /* GoogleService-Info.plist */; };
+		F588DFD120B1DB86004B9606 /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588DFD020B1DB86004B9606 /* HealthKitUI.framework */; };
+		F588DFD320B1DCC4004B9606 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F588DFD220B1DCC4004B9606 /* SignUpViewController.swift */; };
+		F588DFD520B1DCCD004B9606 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F588DFD420B1DCCD004B9606 /* SignInViewController.swift */; };
+		F588DFD720B1DCDE004B9606 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F588DFD620B1DCDE004B9606 /* ConsentTask.swift */; };
+		F58FB50E20A7C91900757FBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58FB50D20A7C91900757FBC /* AppDelegate.swift */; };
+		F58FB51020A7C91900757FBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58FB50F20A7C91900757FBC /* ViewController.swift */; };
+		F58FB51320A7C91900757FBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58FB51120A7C91900757FBC /* Main.storyboard */; };
+		F58FB51620A7C91900757FBC /* IMoniQ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F58FB51420A7C91900757FBC /* IMoniQ.xcdatamodeld */; };
+		F58FB51820A7C91A00757FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58FB51720A7C91A00757FBC /* Assets.xcassets */; };
+		F58FB51B20A7C91A00757FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58FB51920A7C91A00757FBC /* LaunchScreen.storyboard */; };
+		F5DAA0A720B282C0000290BD /* AddPrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DAA0A520B282BF000290BD /* AddPrescriptionViewController.swift */; };
+		F5DAA0A820B282C0000290BD /* PrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DAA0A620B282C0000290BD /* PrescriptionTableViewController.swift */; };
+		F5DAA0AE20B283F4000290BD /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DAA0AC20B283F4000290BD /* Prescription.swift */; };
+		F5DAA0AF20B283F4000290BD /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DAA0AD20B283F4000290BD /* Medicine.swift */; };
+		F5DAA0B220B287DD000290BD /* HealthMonitorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DAA0B120B287DD000290BD /* HealthMonitorDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12AAABCB15E143223ABB2AF0 /* Pods-IMoniQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMoniQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMoniQ/Pods-IMoniQ.release.xcconfig"; sourceTree = "<group>"; };
+		3E93BF3120B1653900A33ED9 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = SOURCE_ROOT; };
+		3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPainv2.swift; sourceTree = "<group>"; };
+		5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMoniQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3CDA2D827D184E52B2B5C61 /* Pods-IMoniQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMoniQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMoniQ/Pods-IMoniQ.debug.xcconfig"; sourceTree = "<group>"; };
+		F514F0EC20AA53E4001C99C1 /* IMoniQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IMoniQ.entitlements; sourceTree = "<group>"; };
+		F514F0EE20AA53E4001C99C1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F514F0F220AA5414001C99C1 /* SleepMonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepMonitorViewController.swift; sourceTree = "<group>"; };
+		F514F0F320AA5414001C99C1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F514F0F520AA5415001C99C1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F514F0F720AA5415001C99C1 /* DailyActivityMonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyActivityMonitorViewController.swift; sourceTree = "<group>"; };
+		F514F10C20AA594D001C99C1 /* HealthMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMonitorViewController.swift; sourceTree = "<group>"; };
+		F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMonitorViewController.swift; sourceTree = "<group>"; };
+		F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionListTableViewController.swift; sourceTree = "<group>"; };
+		F588DFCE20B1DA6B004B9606 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F588DFD020B1DB86004B9606 /* HealthKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKitUI.framework; path = System/Library/Frameworks/HealthKitUI.framework; sourceTree = SDKROOT; };
+		F588DFD220B1DCC4004B9606 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F588DFD420B1DCCD004B9606 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F588DFD620B1DCDE004B9606 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		F58FB50A20A7C91900757FBC /* IMoniQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMoniQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F58FB50D20A7C91900757FBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F58FB50F20A7C91900757FBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F58FB51220A7C91900757FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F58FB51520A7C91900757FBC /* IMoniQ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IMoniQ.xcdatamodel; sourceTree = "<group>"; };
+		F58FB51720A7C91A00757FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F58FB51A20A7C91A00757FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F58FB51C20A7C91A00757FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DAA0A520B282BF000290BD /* AddPrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPrescriptionViewController.swift; sourceTree = "<group>"; };
+		F5DAA0A620B282C0000290BD /* PrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewController.swift; sourceTree = "<group>"; };
+		F5DAA0AC20B283F4000290BD /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
+		F5DAA0AD20B283F4000290BD /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		F5DAA0B120B287DD000290BD /* HealthMonitorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthMonitorDetailViewController.swift; path = "../../../project3-group-12/IMoniQ/Controllers/HealthMonitorDetailViewController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F58FB50720A7C91900757FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F588DFD120B1DB86004B9606 /* HealthKitUI.framework in Frameworks */,
+				F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */,
+				342B6A8B7A012E10AC59E8DF /* Pods_IMoniQ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33D285A559D6498663EDE161 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3CDA2D827D184E52B2B5C61 /* Pods-IMoniQ.debug.xcconfig */,
+				12AAABCB15E143223ABB2AF0 /* Pods-IMoniQ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F514F0ED20AA53E4001C99C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F588DFD020B1DB86004B9606 /* HealthKitUI.framework */,
+				F514F0EE20AA53E4001C99C1 /* HealthKit.framework */,
+				5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F514F0F020AA53FE001C99C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5DAA0A520B282BF000290BD /* AddPrescriptionViewController.swift */,
+				F5DAA0A620B282C0000290BD /* PrescriptionTableViewController.swift */,
+				F514F0F720AA5415001C99C1 /* DailyActivityMonitorViewController.swift */,
+				F514F0F520AA5415001C99C1 /* MenuViewController.swift */,
+				F514F0F220AA5414001C99C1 /* SleepMonitorViewController.swift */,
+				F514F0F320AA5414001C99C1 /* WelcomeViewController.swift */,
+				F514F10C20AA594D001C99C1 /* HealthMonitorViewController.swift */,
+				F5DAA0B120B287DD000290BD /* HealthMonitorDetailViewController.swift */,
+				3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */,
+				F588DFD220B1DCC4004B9606 /* SignUpViewController.swift */,
+				F588DFD420B1DCCD004B9606 /* SignInViewController.swift */,
+				F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */,
+				F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */,
+				F588DFD620B1DCDE004B9606 /* ConsentTask.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F514F0FF20AA57C9001C99C1 /* Supporitng files */ = {
+			isa = PBXGroup;
+			children = (
+				F588DFCE20B1DA6B004B9606 /* GoogleService-Info.plist */,
+				F58FB51720A7C91A00757FBC /* Assets.xcassets */,
+				F58FB50F20A7C91900757FBC /* ViewController.swift */,
+			);
+			path = "Supporitng files";
+			sourceTree = "<group>";
+		};
+		F514F10B20AA5855001C99C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F58FB51120A7C91900757FBC /* Main.storyboard */,
+				F58FB51920A7C91A00757FBC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F58FB50120A7C91900757FBC = {
+			isa = PBXGroup;
+			children = (
+				F58FB50C20A7C91900757FBC /* IMoniQ */,
+				F58FB50B20A7C91900757FBC /* Products */,
+				F514F0ED20AA53E4001C99C1 /* Frameworks */,
+				33D285A559D6498663EDE161 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F58FB50B20A7C91900757FBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F58FB50A20A7C91900757FBC /* IMoniQ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F58FB50C20A7C91900757FBC /* IMoniQ */ = {
+			isa = PBXGroup;
+			children = (
+				F58FB50D20A7C91900757FBC /* AppDelegate.swift */,
+				F5DAA0AB20B283DF000290BD /* Model */,
+				F514F10B20AA5855001C99C1 /* View */,
+				F514F0F020AA53FE001C99C1 /* Controllers */,
+				F514F0FF20AA57C9001C99C1 /* Supporitng files */,
+				F514F0EC20AA53E4001C99C1 /* IMoniQ.entitlements */,
+				F58FB51420A7C91900757FBC /* IMoniQ.xcdatamodeld */,
+				F58FB51C20A7C91A00757FBC /* Info.plist */,
+				3E93BF3120B1653900A33ED9 /* Classes */,
+			);
+			path = IMoniQ;
+			sourceTree = "<group>";
+		};
+		F5DAA0AB20B283DF000290BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5DAA0AD20B283F4000290BD /* Medicine.swift */,
+				F5DAA0AC20B283F4000290BD /* Prescription.swift */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F58FB50920A7C91900757FBC /* IMoniQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F58FB51F20A7C91A00757FBC /* Build configuration list for PBXNativeTarget "IMoniQ" */;
+			buildPhases = (
+				A633924DC607D1304035B76B /* [CP] Check Pods Manifest.lock */,
+				F58FB50620A7C91900757FBC /* Sources */,
+				F58FB50720A7C91900757FBC /* Frameworks */,
+				F58FB50820A7C91900757FBC /* Resources */,
+				EE5A08B7286AB5A468A3B730 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMoniQ;
+			productName = IMoniQ;
+			productReference = F58FB50A20A7C91900757FBC /* IMoniQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F58FB50220A7C91900757FBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Hyojin Lee";
+				TargetAttributes = {
+					F58FB50920A7C91900757FBC = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F58FB50520A7C91900757FBC /* Build configuration list for PBXProject "IMoniQ" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F58FB50120A7C91900757FBC;
+			productRefGroup = F58FB50B20A7C91900757FBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F58FB50920A7C91900757FBC /* IMoniQ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F58FB50820A7C91900757FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58FB51B20A7C91A00757FBC /* LaunchScreen.storyboard in Resources */,
+				3E93BF3220B1653A00A33ED9 /* Classes in Resources */,
+				F58FB51820A7C91A00757FBC /* Assets.xcassets in Resources */,
+				F58FB51320A7C91900757FBC /* Main.storyboard in Resources */,
+				F588DFCF20B1DA6B004B9606 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A633924DC607D1304035B76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMoniQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5A08B7286AB5A468A3B730 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IMoniQ/Pods-IMoniQ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ResearchKit/ResearchKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ResearchKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMoniQ/Pods-IMoniQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F58FB50620A7C91900757FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F588DFD520B1DCCD004B9606 /* SignInViewController.swift in Sources */,
+				F514F0FE20AA5415001C99C1 /* DailyActivityMonitorViewController.swift in Sources */,
+				F58FB51020A7C91900757FBC /* ViewController.swift in Sources */,
+				F514F11120AA59B7001C99C1 /* WeightMonitorViewController.swift in Sources */,
+				F58FB50E20A7C91900757FBC /* AppDelegate.swift in Sources */,
+				F58FB51620A7C91900757FBC /* IMoniQ.xcdatamodeld in Sources */,
+				F514F0FA20AA5415001C99C1 /* WelcomeViewController.swift in Sources */,
+				F5DAA0AF20B283F4000290BD /* Medicine.swift in Sources */,
+				F5DAA0A720B282C0000290BD /* AddPrescriptionViewController.swift in Sources */,
+				F5DAA0AE20B283F4000290BD /* Prescription.swift in Sources */,
+				F514F10D20AA594D001C99C1 /* HealthMonitorViewController.swift in Sources */,
+				F514F0F920AA5415001C99C1 /* SleepMonitorViewController.swift in Sources */,
+				F514F11320AA5A8D001C99C1 /* PrescriptionListTableViewController.swift in Sources */,
+				3E93BF3420B16CFD00A33ED9 /* userPainv2.swift in Sources */,
+				F5DAA0B220B287DD000290BD /* HealthMonitorDetailViewController.swift in Sources */,
+				F588DFD720B1DCDE004B9606 /* ConsentTask.swift in Sources */,
+				F5DAA0A820B282C0000290BD /* PrescriptionTableViewController.swift in Sources */,
+				F588DFD320B1DCC4004B9606 /* SignUpViewController.swift in Sources */,
+				F514F0FC20AA5415001C99C1 /* MenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F58FB51120A7C91900757FBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58FB51220A7C91900757FBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F58FB51920A7C91A00757FBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58FB51A20A7C91A00757FBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F58FB51D20A7C91A00757FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F58FB51E20A7C91A00757FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F58FB52020A7C91A00757FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CDA2D827D184E52B2B5C61 /* Pods-IMoniQ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IMoniQ/IMoniQ.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IMoniQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UTS.IMoniQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F58FB52120A7C91A00757FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12AAABCB15E143223ABB2AF0 /* Pods-IMoniQ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IMoniQ/IMoniQ.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IMoniQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UTS.IMoniQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F58FB50520A7C91900757FBC /* Build configuration list for PBXProject "IMoniQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F58FB51D20A7C91A00757FBC /* Debug */,
+				F58FB51E20A7C91A00757FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F58FB51F20A7C91A00757FBC /* Build configuration list for PBXNativeTarget "IMoniQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F58FB52020A7C91A00757FBC /* Debug */,
+				F58FB52120A7C91A00757FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F58FB51420A7C91900757FBC /* IMoniQ.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F58FB51520A7C91900757FBC /* IMoniQ.xcdatamodel */,
+			);
+			currentVersion = F58FB51520A7C91900757FBC /* IMoniQ.xcdatamodel */;
+			path = IMoniQ.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F58FB50220A7C91900757FBC /* Project object */;
+}
