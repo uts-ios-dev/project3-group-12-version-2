@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 struct userPain: Codable {
     
     var painLevel: Float = 0
