@@ -49,7 +49,7 @@ class HealthMonitorDetailViewController: UIViewController {
                 let minute = calendar.component(.minute, from: userPainHistory[i].date)
                 let month = calendar.component(.month, from: userPainHistory[i].date)
             
-                let str = "\(day)/\(month) \(hour):\(minute)"
+                let str = "\(day)/\(month)"
                 dates.append(str)
             }
             i += 1
@@ -81,6 +81,9 @@ class HealthMonitorDetailViewController: UIViewController {
         let chartDataSet = BarChartDataSet(values: dataEntries, label: "Pain Level")
         let chartData = BarChartData(dataSet: chartDataSet)
         barChartView.data = chartData
+        
+        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:dates)
+        barChartView.xAxis.granularity = 1
     }
     
     
