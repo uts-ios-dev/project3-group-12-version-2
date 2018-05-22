@@ -23,6 +23,7 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.weightInputBox.delegate = self
+        weightChart.xAxis.labelPosition = XAxis.LabelPosition.topInside
         weight.getUserWeightHistory()
         updateGraph()
     }
@@ -76,6 +77,9 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
         data.addDataSet(line1) //Adds the line to the dataSet
         weightChart.data = data
         weightChart.chartDescription?.text = "Weight Monitor"
+        weightChart.legend.enabled = false
+        weightChart.xAxis.valueFormatter = IndexAxisValueFormatter(values:dates)
+        weightChart.xAxis.granularity = 1
     }
 
      //Shake a control to draw the user's attention to the focus of
@@ -108,7 +112,7 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
 
     func promptWithAnimation() {
 
-        let alert = UIView.init(frame: CGRect(x: 15, y: 180, width: self.view.frame.width-30, height: self.view.frame.height/4*3))
+        let alert = UIView.init(frame: CGRect(x: 15, y: 180, width: self.view.frame.width - 30, height: self.view.frame.height/ 4 * 3))
         let keyWindow = UIApplication.shared.keyWindow
         keyWindow?.addSubview(alert)
         alert.transform = CGAffineTransform(scaleX: 1.21, y: 1.21)
@@ -117,6 +121,25 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
             alert.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             alert.alpha = 1.0
         }, completion: nil)
+    }
+    
+    var dates: Array<String> = Array()
+    func setDate() {
+        var i = userWeightHistory.count - 10
+        
+        while i < userWeightHistory.count {
+            if i > -1 {
+                let calendar = Calendar.current
+                let day = calendar.component(.day, from: userWeightHistory[i].date)
+                let hour = calendar.component(.hour, from: userWeightHistory[i].date)
+                let minute = calendar.component(.minute, from: userWeightHistory[i].date)
+                let month = calendar.component(.month, from: userWeightHistory[i].date)
+                
+                let str = "\(day)/\(month)"
+                dates.append(str)
+            }
+            i += 1
+        }
     }
 }
 
