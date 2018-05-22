@@ -15,6 +15,9 @@ PODS:
   - Firebase/Database (5.0.1):
     - Firebase/CoreOnly
     - FirebaseDatabase (= 5.0.0)
+  - Firebase/Storage (5.0.1):
+    - Firebase/CoreOnly
+    - FirebaseStorage (= 3.0.0)
   - FirebaseAnalytics (5.0.0):
     - FirebaseCore (~> 5.0)
     - FirebaseInstanceID (~> 3.0)
@@ -30,6 +33,9 @@ PODS:
     - leveldb-library (~> 1.18)
   - FirebaseInstanceID (3.0.0):
     - FirebaseCore (~> 5.0)
+  - FirebaseStorage (3.0.0):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleToolboxForMac/Defines (2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
@@ -41,14 +47,20 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - ResearchKit (1.5.2)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Charts
   - Firebase
   - Firebase/Auth
+  - Firebase/Core
   - Firebase/Database
+  - Firebase/Storage
   - ResearchKit
+  - SDWebImage (~> 4.0)
   - SVProgressHUD
 
 SPEC REPOS:
@@ -60,11 +72,13 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseStorage
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
     - ResearchKit
+    - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -75,13 +89,15 @@ SPEC CHECKSUMS:
   FirebaseCore: cafc814b2d84fc8733f09e653041cc2165332ad7
   FirebaseDatabase: 697eb53e5b4fe7cd4fa8756c1f82a9fca011345f
   FirebaseInstanceID: 83e0040351565df711a5db3d8ebe5ea21aca998a
+  FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   ResearchKit: a5770681dd61afddd3d1f24d232b9abf00cba454
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 0f250930a014ce970099eb0e85dc65283ad79243
+PODFILE CHECKSUM: b061f35e85d882eaf9ca91043de711c374476c8d
 
 COCOAPODS: 1.5.2

@@ -9,21 +9,25 @@
 import UIKit
 import CoreData
 import Firebase
-
+import UserNotificationsUI
+import NotificationCenter
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
+    override init() {
+        FirebaseApp.configure();
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        FirebaseApp.configure()
-        
-        let myDatabase = Database.database().reference()
-        myDatabase.setValue("It works!")
-        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in}
+        let generalCategory = UNNotificationCategory(identifier: "GENERAL", actions: [], intentIdentifiers: [], options: .customDismissAction)
+        center.setNotificationCategories([generalCategory])
         return true
     }
 

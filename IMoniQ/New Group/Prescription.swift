@@ -10,6 +10,9 @@ import Foundation
 
 struct Prescription {
     
+    var key: String;
+    
     var name: String;
+    
     var medicines: [Medicine];
 }

@@ -4,7 +4,12 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+<<<<<<< HEAD
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+>>>>>>> 11f75bfb8c98e67faf6d0e10d0c1c3875e5f85f5
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -57,9 +62,9 @@
                                     <constraint firstItem="uQ7-Ei-jC6" firstAttribute="centerX" secondItem="2l1-y5-IRP" secondAttribute="centerX" id="5ZM-1c-x8x"/>
                                     <constraint firstItem="gde-8W-6Qo" firstAttribute="top" secondItem="uQ7-Ei-jC6" secondAttribute="bottom" constant="44" id="CsL-HO-ypv"/>
                                     <constraint firstItem="fm2-3n-ERk" firstAttribute="leading" secondItem="2l1-y5-IRP" secondAttribute="leading" id="Iha-aK-060"/>
-                                    <constraint firstAttribute="trailing" secondItem="gde-8W-6Qo" secondAttribute="trailing" id="QA9-Yg-TMa"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gde-8W-6Qo" secondAttribute="trailing" id="QA9-Yg-TMa"/>
                                     <constraint firstAttribute="bottom" secondItem="gde-8W-6Qo" secondAttribute="bottom" constant="81" id="Tdb-4d-lVr"/>
-                                    <constraint firstItem="gde-8W-6Qo" firstAttribute="leading" secondItem="2l1-y5-IRP" secondAttribute="leading" id="aiE-gu-9i1"/>
+                                    <constraint firstItem="gde-8W-6Qo" firstAttribute="leading" relation="lessThanOrEqual" secondItem="2l1-y5-IRP" secondAttribute="leading" id="aiE-gu-9i1"/>
                                     <constraint firstAttribute="height" constant="300" id="igB-oZ-0Et"/>
                                     <constraint firstItem="fm2-3n-ERk" firstAttribute="top" secondItem="gde-8W-6Qo" secondAttribute="bottom" constant="5" id="jtt-Oh-3Dl"/>
                                     <constraint firstAttribute="trailing" secondItem="fm2-3n-ERk" secondAttribute="trailing" id="ju3-AC-WiM"/>
@@ -107,7 +112,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="201"/>
                                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="prescription list">
+                                                <state key="normal" title="Prescription List">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -122,7 +127,7 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="HsH-8w-21v" kind="show" id="6Tu-m5-tHG"/>
+                                                    <segue destination="HsH-8w-21v" kind="show" identifier="goToHealthMonitor" id="6Tu-m5-tHG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neP-aO-wGF">
@@ -156,7 +161,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Weight Monitor"/>
                                                 <connections>
-                                                    <segue destination="ns2-aU-fCQ" kind="show" id="gAb-ZZ-WgC"/>
+                                                    <segue destination="ns2-aU-fCQ" kind="show" identifier="goToWeightMonitor" id="gAb-ZZ-WgC"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNy-w7-AC0">
@@ -301,21 +306,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDk-wj-Ztr">
-                                        <rect key="frame" x="138" y="108" width="100" height="50"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDk-wj-Ztr">
+                                        <rect key="frame" x="151.5" y="108" width="73" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="7nD-M8-YxB"/>
-                                            <constraint firstAttribute="width" constant="100" id="RWF-pF-IgF"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="RWF-pF-IgF"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU9-68-lIC">
-                                        <rect key="frame" x="113" y="176" width="150" height="47"/>
+                                        <rect key="frame" x="155" y="176" width="66" height="47"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="Tn9-8k-L8D"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="Tn9-8k-L8D"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="Enter">
@@ -378,13 +383,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6w-Le-Pz0">
                                 <rect key="frame" x="33" y="210" width="309" height="246"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="4YO-1D-4tn">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="4YO-1D-4tn">
                                         <rect key="frame" x="8" y="54" width="293" height="30"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="yv2-Au-pAx">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="yv2-Au-pAx">
                                         <rect key="frame" x="8" y="92" width="293" height="30"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -446,13 +451,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9F-rT-gfH">
                                 <rect key="frame" x="33" y="210" width="309" height="246"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Unk-A3-Anq">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Unk-A3-Anq">
                                         <rect key="frame" x="8" y="54" width="293" height="30"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Awp-Yh-2ig">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Awp-Yh-2ig">
                                         <rect key="frame" x="8" y="92" width="293" height="30"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -543,16 +548,80 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="pKl-xk-Vi5">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="u0C-Jb-v0H">
-                            <connections>
-                                <segue destination="uks-3j-BQo" kind="show" identifier="addPrescription" id="j8J-0q-cLe"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Add" id="u0C-Jb-v0H">
+                                <connections>
+                                    <segue destination="uks-3j-BQo" kind="show" identifier="addPrescription" id="j8J-0q-cLe"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Empty" id="7G0-8h-IXX">
+                                <connections>
+                                    <action selector="emptyPrescriptions:" destination="y5v-OP-bUH" id="zFr-ME-xTS"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Init" id="wu5-wF-FFI">
+                                <connections>
+                                    <action selector="initializePrescriptionSamples:" destination="y5v-OP-bUH" id="x6O-a4-qct"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPp-Us-tyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3383" y="-347"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="bHZ-RN-fw6">
+            <objects>
+                <viewController storyboardIdentifier="pImageViewController" id="2Ql-0M-Aap" customClass="PrescriptionImageViewController" customModule="IMoniQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Su-6W-Y3n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHd-O8-mCo">
+                                <rect key="frame" x="16" y="229" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prescription Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-2u-5Cm">
+                                <rect key="frame" x="16" y="95" width="146" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXm-vE-GdI">
+                                <rect key="frame" x="170" y="95" width="189" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Download Progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEo-nw-9Fn">
+                                <rect key="frame" x="16" y="148" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PhN-mT-UU4">
+                                <rect key="frame" x="178" y="160" width="181" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OnB-rZ-iXh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="HMp-Kq-4PC"/>
+                    <connections>
+                        <outlet property="imgPrescription" destination="oHd-O8-mCo" id="gBH-YA-Dvx"/>
+                        <outlet property="lblPrescriptionName" destination="GXm-vE-GdI" id="hzI-VU-lQI"/>
+                        <outlet property="progressViewOfDownloading" destination="PhN-mT-UU4" id="HHU-wK-2hS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRh-sg-fMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4205.6000000000004" y="-1079.0104947526238"/>
         </scene>
         <!--Prescription List-->
         <scene sceneID="VvX-FO-RRE">
@@ -562,52 +631,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyV-wC-tll">
-                                <rect key="frame" x="16" y="117" width="89" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prescription Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyV-wC-tll">
+                                <rect key="frame" x="16" y="158" width="146" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-uz-8FU">
-                                <rect key="frame" x="113" y="114" width="246" height="30"/>
+                                <rect key="frame" x="170" y="155" width="189" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medicine:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbh-Z4-l7R">
-                                <rect key="frame" x="30" y="191" width="75" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medicine Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbh-Z4-l7R">
+                                <rect key="frame" x="38" y="220" width="124" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="egQ-57-AnQ">
-                                <rect key="frame" x="113" y="191" width="246" height="100"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-Rk-D0K">
+                                <rect key="frame" x="170" y="215" width="189" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcm-AG-7O3">
-                                <rect key="frame" x="149" y="356" width="76" height="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repeats (per day):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPF-6m-aPv">
+                                <rect key="frame" x="21" y="323" width="141" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Take Photo"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note: If your prescription has multiple medicines, add them multiply here:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OL-Qi-bTh">
+                                <rect key="frame" x="16" y="74" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-Bd-Tq0">
+                                <rect key="frame" x="0.0" y="253" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sy-5c-RFO">
+                                <rect key="frame" x="53" y="457" width="270" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Attach an Image to the Prescription"/>
                                 <connections>
-                                    <action selector="takePhotoWithCamera:" destination="uks-3j-BQo" eventType="touchUpInside" id="BZC-u1-Geh"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHf-dV-Awv">
-                                <rect key="frame" x="0.0" y="394" width="375" height="273"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELe-zm-XPk">
-                                <rect key="frame" x="117" y="318" width="141" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Choose from Photos"/>
-                                <connections>
-                                    <action selector="getImageFromPhotosLibrary:" destination="uks-3j-BQo" eventType="touchUpInside" id="73b-b6-Fjj"/>
+                                    <segue destination="g4M-jd-TCU" kind="show" id="VrD-e0-sK6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -615,15 +691,89 @@
                         <viewLayoutGuide key="safeArea" id="Ifv-bf-jO4"/>
                     </view>
                     <navigationItem key="navigationItem" id="a7q-Ws-z9I">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="EZJ-mL-sPs"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Save" id="EZJ-mL-sPs">
+                                <connections>
+                                    <action selector="addPrescription:" destination="uks-3j-BQo" id="ap4-4S-4lc"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Clear" id="Ae7-RS-qNu">
+                                <connections>
+                                    <action selector="clear:" destination="uks-3j-BQo" id="qwu-CH-WoC"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="imgTaken" destination="NHf-dV-Awv" id="9Cn-7l-jRv"/>
+                        <outlet property="pickerRepeats" destination="pb9-Bd-Tq0" id="a8J-aV-M7i"/>
+                        <outlet property="txtMedicineName" destination="3ww-Rk-D0K" id="QMv-TM-xmo"/>
+                        <outlet property="txtPrescriptionName" destination="vVb-uz-8FU" id="GyZ-Db-ujv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2E-jg-BEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4207" y="-349"/>
+            <point key="canvasLocation" x="4205.6000000000004" y="-349.47526236881561"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="tK1-i4-boi">
+            <objects>
+                <viewController id="g4M-jd-TCU" customClass="AddImage4PrescriptionViewController" customModule="IMoniQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Frq-gJ-lVe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcm-AG-7O3">
+                                <rect key="frame" x="274" y="92" width="85" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <action selector="takePhotoWithCamera:" destination="g4M-jd-TCU" eventType="touchUpInside" id="euL-FW-PdU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload Progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYt-8z-e9x">
+                                <rect key="frame" x="16" y="156" width="132" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHf-dV-Awv">
+                                <rect key="frame" x="16" y="235" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELe-zm-XPk">
+                                <rect key="frame" x="16" y="92" width="157" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Choose from Photos"/>
+                                <connections>
+                                    <action selector="getImageFromPhotosLibrary:" destination="g4M-jd-TCU" eventType="touchUpInside" id="fK8-FJ-d0b"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wU2-a1-ddd">
+                                <rect key="frame" x="156" y="168" width="203" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="69c-sC-Mp3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="7Ob-6U-e1Z">
+                        <barButtonItem key="rightBarButtonItem" title="Upload" id="X55-iA-t3J">
+                            <connections>
+                                <action selector="uploadImage" destination="g4M-jd-TCU" id="LZ7-O9-QcM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imgTaken" destination="NHf-dV-Awv" id="aZZ-8c-N6k"/>
+                        <outlet property="progressViewOfUploading" destination="wU2-a1-ddd" id="mKZ-Ko-7Eu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rz-CY-bKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5048.8000000000002" y="-349.47526236881561"/>
         </scene>
         <!--Health Monitor-->
         <scene sceneID="EZn-XE-g5A">

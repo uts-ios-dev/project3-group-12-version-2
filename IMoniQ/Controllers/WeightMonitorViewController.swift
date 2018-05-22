@@ -19,13 +19,23 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
     
     //var weights : [Double] = [] //weight datas are stored here
     var weight: userWeight = userWeight()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.weightInputBox.delegate = self
         weightChart.xAxis.labelPosition = XAxis.LabelPosition.topInside
         weight.getUserWeightHistory()
         updateGraph()
+    }
+    
+    // MARK: - Releasing the Keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true);
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder();
+        return true;
     }
 
     // allows digit input only.

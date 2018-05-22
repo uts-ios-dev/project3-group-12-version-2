@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import SVProgressHUD
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: BasicViewController {
 
     
     @IBOutlet var emailTextfield: UITextField!
@@ -27,7 +27,10 @@ class SignUpViewController: UIViewController {
         //TODO: Set up a new user on our Firbase database
         Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
             if error != nil {
-                print(error!)
+                print(error!);
+                SVProgressHUD.dismiss();
+                let err = (error?.localizedDescription)!;
+                self.prompt("You should input valid email like 'xx@xx.xx'. The error information:\(err)");
             } else {
                 print("Registration successfull")
                 SVProgressHUD.dismiss()
