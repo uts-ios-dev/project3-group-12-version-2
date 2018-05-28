@@ -122,7 +122,7 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
 
     func promptWithAnimation() {
 
-        let alert = UIView.init(frame: CGRect(x: 15, y: 180, width: self.view.frame.width - 30, height: self.view.frame.height/ 4 * 3))
+        let alert = UIView.init(frame: CGRect(x: 15, y: 180, width: self.view.frame.width - 30, height: self.view.frame.height / 4 * 3))
         let keyWindow = UIApplication.shared.keyWindow
         keyWindow?.addSubview(alert)
         alert.transform = CGAffineTransform(scaleX: 1.21, y: 1.21)
