@@ -30,7 +30,7 @@ class SignUpViewController: BasicViewController {
                 print(error!);
                 SVProgressHUD.dismiss();
                 let err = (error?.localizedDescription)!;
-                self.prompt("Please retry to register.The error information:\(err)");
+                self.prompt("The error information: \(err) Please retry to register.");
             } else {
                 
                 print("Registration successfull")

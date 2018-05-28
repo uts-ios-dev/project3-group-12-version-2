@@ -21,7 +21,7 @@ public var ConsentTask: ORKOrderedTask {
         .dataGathering,
         .privacy,
         .dataUse,
-        .timeCommitment
+//        .timeCommitment
 //        .studySurvey,
 //        .studyTasks,
 //        .withdrawing

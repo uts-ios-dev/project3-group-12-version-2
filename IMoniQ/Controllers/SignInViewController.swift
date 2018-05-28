@@ -35,7 +35,7 @@ class SignInViewController: BasicViewController {
                 print(error!)
                 SVProgressHUD.dismiss();
                 let err = (error?.localizedDescription)!;
-                self.prompt("Please retry login. The error information:\(err)");
+                self.prompt("The error information: \(err) Please retry login.");
                 
             } else {
                 print("Registration is successfull")

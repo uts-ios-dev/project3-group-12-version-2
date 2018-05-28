@@ -111,8 +111,22 @@
                                                     <segue destination="y5v-OP-bUH" kind="show" identifier="goToPrescriptionTable" id="NNb-pT-8Xb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9A-gl-Wed">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cry-y6-Ag4">
                                                 <rect key="frame" x="0.0" y="301.5" width="187.5" height="301.5"/>
+                                                <color key="backgroundColor" red="0.78352124494893938" green="1" blue="0.98993913319209159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Weight Monitor"/>
+                                                <connections>
+                                                    <segue destination="ns2-aU-fCQ" kind="show" identifier="goToWeightMonitor" id="gAb-ZZ-WgC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wKa-qp-SOK">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="603"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9A-gl-Wed">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="301.5"/>
                                                 <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Health Monitor">
@@ -122,27 +136,13 @@
                                                     <segue destination="HsH-8w-21v" kind="show" identifier="goToHealthMonitor" id="6Tu-m5-tHG"/>
                                                 </connections>
                                             </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wKa-qp-SOK">
-                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="603"/>
-                                        <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeK-dh-r4f">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="301.5"/>
+                                                <rect key="frame" x="0.0" y="301.5" width="187.5" height="301.5"/>
                                                 <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.30804765227500003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Sleep Monitor"/>
                                                 <connections>
                                                     <segue destination="9RA-EC-toK" kind="show" identifier="goToSleepMonitor" id="vsx-M7-atT"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cry-y6-Ag4">
-                                                <rect key="frame" x="0.0" y="301.5" width="187.5" height="301.5"/>
-                                                <color key="backgroundColor" red="0.57280815972222221" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Weight Monitor"/>
-                                                <connections>
-                                                    <segue destination="ns2-aU-fCQ" kind="show" identifier="goToWeightMonitor" id="gAb-ZZ-WgC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -159,7 +159,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vDz-qv-GiK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2hY-Mb-yvp"/>
+                    <navigationItem key="navigationItem" id="2hY-Mb-yvp">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="1tb-m4-qjC">
+                            <connections>
+                                <action selector="SignOutPressed:" destination="art-5G-ksg" id="6tN-cA-oQJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZH-go-dVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pr-6w-ADC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4373.6000000000004" y="608.54572713643188"/>
+            <point key="canvasLocation" x="3788" y="566"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hFx-eP-ru9">
@@ -335,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Um1-zi-VfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3709.5999999999999" y="608.54572713643188"/>
+            <point key="canvasLocation" x="3124" y="566"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="ehS-Ov-m9j">
@@ -651,7 +657,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.65234305603885745" green="0.96842863880426944" blue="1" alpha="0.27811964900000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="Note: If your prescription has more than one medicine, add them multiple time here:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OL-Qi-bTh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="Note: If your prescription has more than one medicine, add them multiple times here:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OL-Qi-bTh">
                                 <rect key="frame" x="5" y="101" width="364" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
@@ -832,7 +838,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbt-Zi-TuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3005.5999999999999" y="608.54572713643188"/>
+            <point key="canvasLocation" x="2420" y="566"/>
         </scene>
         <!--Health Detail-->
         <scene sceneID="nEw-vy-xeb">
@@ -865,7 +871,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ct-Fr-c2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3006" y="1372"/>
+            <point key="canvasLocation" x="2420" y="1329"/>
         </scene>
     </scenes>
     <resources>
