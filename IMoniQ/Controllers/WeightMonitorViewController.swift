@@ -26,6 +26,16 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
         weight.getUserWeightHistory()
         updateGraph()
     }
+    
+    // MARK: - Releasing the Keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true);
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder();
+        return true;
+    }
 
     // allows digit input only.
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

@@ -103,7 +103,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="201"/>
                                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="prescription list">
+                                                <state key="normal" title="Prescription List">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -118,7 +118,7 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="HsH-8w-21v" kind="show" id="6Tu-m5-tHG"/>
+                                                    <segue destination="HsH-8w-21v" kind="show" identifier="goToHealthMonitor" id="6Tu-m5-tHG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neP-aO-wGF">
@@ -152,7 +152,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Weight Monitor"/>
                                                 <connections>
-                                                    <segue destination="ns2-aU-fCQ" kind="show" id="gAb-ZZ-WgC"/>
+                                                    <segue destination="ns2-aU-fCQ" kind="show" identifier="goToWeightMonitor" id="gAb-ZZ-WgC"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNy-w7-AC0">
@@ -355,7 +355,6 @@
                         <viewLayoutGuide key="safeArea" id="PjL-4T-oel"/>
                     </view>
                     <connections>
-                        <outlet property="inputButton" destination="BU9-68-lIC" id="98z-HS-RnK"/>
                         <outlet property="weightChart" destination="oAp-Vq-bzg" id="xJ2-bZ-VnX"/>
                         <outlet property="weightInputBox" destination="TDk-wj-Ztr" id="h2T-12-Ybu"/>
                     </connections>

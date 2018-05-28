@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>500218653913-7tqngcvp01ntgu6drur8drln9lb1je24.apps.googleusercontent.com</string>
+	<string>161884570923-okl32l6t1hs7rlmj4uvkpmid23ci0urn.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.500218653913-7tqngcvp01ntgu6drur8drln9lb1je24</string>
+	<string>com.googleusercontent.apps.161884570923-okl32l6t1hs7rlmj4uvkpmid23ci0urn</string>
 	<key>API_KEY</key>
-	<string>AIzaSyClwqUhO5seYSGB97YbPGurBrqi702IDNg</string>
+	<string>AIzaSyBkBuW5nsQC0NkPdeZuUkFGiacccROeK4s</string>
 	<key>GCM_SENDER_ID</key>
-	<string>500218653913</string>
+	<string>161884570923</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>UTS.IMoniQ</string>
+	<string>au.edu.uts.IMoniQ</string>
 	<key>PROJECT_ID</key>
-	<string>imoniq-8ae5a</string>
+	<string>imoniq2-3c632</string>
 	<key>STORAGE_BUCKET</key>
-	<string>imoniq-8ae5a.appspot.com</string>
+	<string>imoniq2-3c632.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:500218653913:ios:715e8f5b3393f66e</string>
+	<string>1:161884570923:ios:93ee39e21cd153e4</string>
 	<key>DATABASE_URL</key>
-	<string>https://imoniq-8ae5a.firebaseio.com</string>
+	<string>https://imoniq2-3c632.firebaseio.com</string>
 </dict>
 </plist>

@@ -5,7 +5,6 @@
 //  Created by Ding on 18/5/18.
 //  Copyright © 2018 Hyojin Lee. All rights reserved.
 //
-
 import Foundation
 
 struct userWeight: Codable {

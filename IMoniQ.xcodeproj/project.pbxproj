@@ -16,8 +16,9 @@
 		1487C0FD20BA7DE3007EEBC3 /* prescription4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1487C0FC20BA7DE2007EEBC3 /* prescription4.jpg */; };
 		1487C0FF20BAD033007EEBC3 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487C0FE20BAD033007EEBC3 /* BasicViewController.swift */; };
 		1487C10120BAD114007EEBC3 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487C10020BAD114007EEBC3 /* BasicTableViewController.swift */; };
+		14C4B2D320BBB91C00974C5D /* userWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C4B2D220BBB91C00974C5D /* userWeight.swift */; };
+		14C4B2D520BBBD0000974C5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C4B2D420BBBD0000974C5D /* GoogleService-Info.plist */; };
 		342B6A8B7A012E10AC59E8DF /* Pods_IMoniQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */; };
-		352A844C20B2A23200FDAE73 /* userWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A844B20B2A23200FDAE73 /* userWeight.swift */; };
 		3E93BF3220B1653A00A33ED9 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 3E93BF3120B1653900A33ED9 /* Classes */; };
 		3E93BF3420B16CFD00A33ED9 /* userPainv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */; };
 		F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F514F0EE20AA53E4001C99C1 /* HealthKit.framework */; };
@@ -28,7 +29,6 @@
 		F514F10D20AA594D001C99C1 /* HealthMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F10C20AA594D001C99C1 /* HealthMonitorViewController.swift */; };
 		F514F11120AA59B7001C99C1 /* WeightMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */; };
 		F514F11320AA5A8D001C99C1 /* PrescriptionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */; };
-		F588DFCF20B1DA6B004B9606 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F588DFCE20B1DA6B004B9606 /* GoogleService-Info.plist */; };
 		F588DFD120B1DB86004B9606 /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588DFD020B1DB86004B9606 /* HealthKitUI.framework */; };
 		F588DFD320B1DCC4004B9606 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F588DFD220B1DCC4004B9606 /* SignUpViewController.swift */; };
 		F588DFD520B1DCCD004B9606 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F588DFD420B1DCCD004B9606 /* SignInViewController.swift */; };
@@ -56,6 +56,9 @@
 		1487C0FC20BA7DE2007EEBC3 /* prescription4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prescription4.jpg; sourceTree = "<group>"; };
 		1487C0FE20BAD033007EEBC3 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		1487C10020BAD114007EEBC3 /* BasicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
+		14C4B2D020BBB82800974C5D /* userWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = userWeight.swift; path = IMoniQ/Controllers/userWeight.swift; sourceTree = "<group>"; };
+		14C4B2D220BBB91C00974C5D /* userWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userWeight.swift; sourceTree = "<group>"; };
+		14C4B2D420BBBD0000974C5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E93BF3120B1653900A33ED9 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = SOURCE_ROOT; };
 		3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPainv2.swift; sourceTree = "<group>"; };
 		5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMoniQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +72,6 @@
 		F514F10C20AA594D001C99C1 /* HealthMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMonitorViewController.swift; sourceTree = "<group>"; };
 		F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightMonitorViewController.swift; sourceTree = "<group>"; };
 		F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionListTableViewController.swift; sourceTree = "<group>"; };
-		F588DFCE20B1DA6B004B9606 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F588DFD020B1DB86004B9606 /* HealthKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKitUI.framework; path = System/Library/Frameworks/HealthKitUI.framework; sourceTree = SDKROOT; };
 		F588DFD220B1DCC4004B9606 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F588DFD420B1DCCD004B9606 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -153,7 +155,7 @@
 				F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */,
 				F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */,
 				F588DFD620B1DCDE004B9606 /* ConsentTask.swift */,
-				352A844B20B2A23200FDAE73 /* userWeight.swift */,
+				14C4B2D220BBB91C00974C5D /* userWeight.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,7 +163,7 @@
 		F514F0FF20AA57C9001C99C1 /* Supporitng files */ = {
 			isa = PBXGroup;
 			children = (
-				F588DFCE20B1DA6B004B9606 /* GoogleService-Info.plist */,
+				14C4B2D420BBBD0000974C5D /* GoogleService-Info.plist */,
 				F58FB51720A7C91A00757FBC /* Assets.xcassets */,
 				F58FB50F20A7C91900757FBC /* ViewController.swift */,
 			);
@@ -180,6 +182,7 @@
 		F58FB50120A7C91900757FBC = {
 			isa = PBXGroup;
 			children = (
+				14C4B2D020BBB82800974C5D /* userWeight.swift */,
 				F58FB50C20A7C91900757FBC /* IMoniQ */,
 				F58FB50B20A7C91900757FBC /* Products */,
 				F514F0ED20AA53E4001C99C1 /* Frameworks */,
@@ -288,12 +291,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C4B2D520BBBD0000974C5D /* GoogleService-Info.plist in Resources */,
 				1487C0FD20BA7DE3007EEBC3 /* prescription4.jpg in Resources */,
 				F58FB51B20A7C91A00757FBC /* LaunchScreen.storyboard in Resources */,
 				3E93BF3220B1653A00A33ED9 /* Classes in Resources */,
 				F58FB51820A7C91A00757FBC /* Assets.xcassets in Resources */,
 				F58FB51320A7C91900757FBC /* Main.storyboard in Resources */,
-				F588DFCF20B1DA6B004B9606 /* GoogleService-Info.plist in Resources */,
 				1487C0F920BA7642007EEBC3 /* prescription2.jpg in Resources */,
 				1487C0FB20BA7642007EEBC3 /* prescription1.jpg in Resources */,
 				1487C0FA20BA7642007EEBC3 /* prescription3.jpg in Resources */,
@@ -378,6 +381,7 @@
 				F514F11320AA5A8D001C99C1 /* PrescriptionListTableViewController.swift in Sources */,
 				3E93BF3420B16CFD00A33ED9 /* userPainv2.swift in Sources */,
 				F588DFD720B1DCDE004B9606 /* ConsentTask.swift in Sources */,
+				14C4B2D320BBB91C00974C5D /* userWeight.swift in Sources */,
 				1487C0FF20BAD033007EEBC3 /* BasicViewController.swift in Sources */,
 				F5DAA0A820B282C0000290BD /* PrescriptionTableViewController.swift in Sources */,
 				F588DFD320B1DCC4004B9606 /* SignUpViewController.swift in Sources */,
