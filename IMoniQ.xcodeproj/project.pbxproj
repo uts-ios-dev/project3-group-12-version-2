@@ -17,6 +17,7 @@
 		1487C0FF20BAD033007EEBC3 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487C0FE20BAD033007EEBC3 /* BasicViewController.swift */; };
 		1487C10120BAD114007EEBC3 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487C10020BAD114007EEBC3 /* BasicTableViewController.swift */; };
 		342B6A8B7A012E10AC59E8DF /* Pods_IMoniQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7CDCDE9ED537F98A25EFCD /* Pods_IMoniQ.framework */; };
+		352A844C20B2A23200FDAE73 /* userWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A844B20B2A23200FDAE73 /* userWeight.swift */; };
 		3E93BF3220B1653A00A33ED9 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 3E93BF3120B1653900A33ED9 /* Classes */; };
 		3E93BF3420B16CFD00A33ED9 /* userPainv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93BF3320B16CFD00A33ED9 /* userPainv2.swift */; };
 		F514F0EF20AA53E4001C99C1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F514F0EE20AA53E4001C99C1 /* HealthKit.framework */; };
@@ -152,6 +153,7 @@
 				F514F11020AA59B7001C99C1 /* WeightMonitorViewController.swift */,
 				F514F11220AA5A8D001C99C1 /* PrescriptionListTableViewController.swift */,
 				F588DFD620B1DCDE004B9606 /* ConsentTask.swift */,
+				352A844B20B2A23200FDAE73 /* userWeight.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

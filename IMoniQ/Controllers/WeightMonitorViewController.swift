@@ -17,13 +17,14 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var weightInputBox: UITextField!
     @IBOutlet weak var weightChart: LineChartView!
     
-    var weights : [Double] = [] //weight datas are stored here
-
+    //var weights : [Double] = [] //weight datas are stored here
+    var weight: userWeight = userWeight()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.weightInputBox.delegate = self
-
+        weight.getUserWeightHistory()
+        updateGraph()
     }
 
     // allows digit input only.
@@ -46,9 +47,10 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
         }
 
         let input  = Double(weightInputBox.text!) //gets input from the weightInputBox
-
-        weights.append(input!) // add weights input
-
+        
+        
+        //weights.append(input!) // add weights input
+        weight.updateUserWeightHistory(currentWeight: Float(input!))
         updateGraph()
         weightInputBox.text = "" // after submitting reset the box
     }
@@ -58,8 +60,11 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
         var lineChartEntry  = [ChartDataEntry]()
 
         //here is the for loop
-        for i in 0..<weights.count {
-            let value = ChartDataEntry(x: Double(i), y: weights[i]) //set the X and Y status in a data chart entry
+        for i in userWeightHistory.count - 10..<userWeightHistory.count {
+            if i < 0 {
+                continue
+            }
+            let value = ChartDataEntry(x: Double(i), y: Double(userWeightHistory[i].weight)) //set the X and Y status in a data chart entry
             lineChartEntry.append(value)
         }
 
