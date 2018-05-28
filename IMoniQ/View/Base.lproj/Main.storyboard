@@ -152,7 +152,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Weight Monitor"/>
                                                 <connections>
-                                                    <segue destination="ns2-aU-fCQ" kind="show" id="gAb-ZZ-WgC"/>
+                                                    <segue destination="ns2-aU-fCQ" kind="show" id="vk6-77-gPJ"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNy-w7-AC0">
@@ -297,14 +297,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDk-wj-Ztr">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDk-wj-Ztr">
                                         <rect key="frame" x="151.5" y="108" width="73" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="7nD-M8-YxB"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="RWF-pF-IgF"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU9-68-lIC">
@@ -355,7 +355,6 @@
                         <viewLayoutGuide key="safeArea" id="PjL-4T-oel"/>
                     </view>
                     <connections>
-                        <outlet property="inputButton" destination="BU9-68-lIC" id="98z-HS-RnK"/>
                         <outlet property="weightChart" destination="oAp-Vq-bzg" id="xJ2-bZ-VnX"/>
                         <outlet property="weightInputBox" destination="TDk-wj-Ztr" id="h2T-12-Ybu"/>
                     </connections>
