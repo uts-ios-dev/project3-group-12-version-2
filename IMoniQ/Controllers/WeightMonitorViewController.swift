@@ -18,7 +18,7 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var weightChart: LineChartView!
     
     //var weights : [Double] = [] //weight datas are stored here
-    var weight: userWeight = userWeight()
+    var weight: UserWeight = UserWeight()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import SVProgressHUD
 
-class SignInViewController: UIViewController {
+class SignInViewController: BasicViewController {
 
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
@@ -33,8 +33,12 @@ class SignInViewController: UIViewController {
         { (user, error) in
             if error != nil {
                 print(error!)
+                SVProgressHUD.dismiss();
+                let err = (error?.localizedDescription)!;
+                self.prompt("Please retry login. The error information:\(err)");
+                
             } else {
-                print("Registration successfull")
+                print("Registration is successfull")
                 SVProgressHUD.dismiss()
                 self.performSegue(withIdentifier: "goToMenu", sender: self)
             }

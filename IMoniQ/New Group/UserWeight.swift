@@ -7,7 +7,7 @@
 //
 import Foundation
 
-struct userWeight: Codable {
+struct UserWeight: Codable {
     
     var weight: Float = 0
     var date: Date = Date()
@@ -17,7 +17,7 @@ struct userWeight: Codable {
         let defaults = UserDefaults.standard
         if let savedWeight = defaults.object(forKey: "weight") as? Data {
             let decoder = JSONDecoder()
-            if let loadedWeight = try? decoder.decode(Array<userWeight>.self, from: savedWeight) {
+            if let loadedWeight = try? decoder.decode(Array<UserWeight>.self, from: savedWeight) {
                 userWeightHistory = loadedWeight
             }
         }
@@ -27,7 +27,7 @@ struct userWeight: Codable {
     {
         let defaults = UserDefaults.standard
         let currentDate = Date()
-        let weight = userWeight(weight: currentWeight, date: currentDate)
+        let weight = UserWeight(weight: currentWeight, date: currentDate)
         getUserWeightHistory()
         userWeightHistory.append(weight)
         let encoder = JSONEncoder()
@@ -46,4 +46,4 @@ struct userWeight: Codable {
     
 }
 
-var userWeightHistory: Array<userWeight> = Array()
+var userWeightHistory: Array<UserWeight> = Array()
