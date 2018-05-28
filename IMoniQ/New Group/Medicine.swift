@@ -10,7 +10,10 @@ import Foundation
 
 struct Medicine {
     
+    var key: String;
+    
     var name: String;
+    
     var repeats: String;
     
 }

@@ -13,5 +13,8 @@ target 'IMoniQ' do
     pod 'Firebase'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
+    pod 'Firebase/Core'
+    pod 'Firebase/Storage'
+    pod 'SDWebImage', '~> 4.0'
     pod 'SVProgressHUD'
 end
