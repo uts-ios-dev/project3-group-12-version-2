@@ -19,7 +19,7 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
     
     //var weights : [Double] = [] //weight datas are stored here
     var weight: userWeight = userWeight()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.weightInputBox.delegate = self
