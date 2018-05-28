@@ -11,8 +11,7 @@ import Charts
 import HealthKit
 
 
-class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
-    
+class WeightMonitorViewController: BasicViewController, UITextFieldDelegate  {
 
     @IBOutlet weak var weightInputBox: UITextField!
     @IBOutlet weak var weightChart: LineChartView!
@@ -45,7 +44,6 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
         return allowedCharaters.isSuperset(of: characterSet)
     }
 
-
     /// This is the button trigger
     @IBAction func enterButtonPressed(_ sender: UIButton!) {
 
@@ -53,17 +51,22 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
             self.shake(self.weightInputBox)
             self.perform(#selector(
                 shake(_:)), with: nil, afterDelay: 0.2)
-            self.prompt()
+            self.prompt("Please enter your weight(number)")
             return
         }
 
         let input  = Double(weightInputBox.text!) //gets input from the weightInputBox
         
-        
-        //weights.append(input!) // add weights input
-        weight.updateUserWeightHistory(currentWeight: Float(input!))
-        updateGraph()
-        weightInputBox.text = "" // after submitting reset the box
+        if input! >= 200.0 {
+            //wishing the user has the weight no more than 200kg.
+            prompt("Please enter the weight less than 200kg")
+            
+        } else {
+            //weights.append(input!) // add weights input
+            weight.updateUserWeightHistory(currentWeight: Float(input!))
+            updateGraph()
+            weightInputBox.text = "" // after submitting reset the box
+        }
     }
 
     func updateGraph(){
@@ -92,45 +95,18 @@ class WeightMonitorViewController: UIViewController, UITextFieldDelegate {
         weightChart.xAxis.granularity = 1
     }
 
-     //Shake a control to draw the user's attention to the focus of
+     //Shake a control to draw the user's attention to the focus of weightInputBox.
     @objc func shake(_ object: UIView) {
 
         UIView.animate(withDuration: 0.2, delay: 0, animations: {
-
             let rightTransform  = CGAffineTransform(translationX: 50, y: 0)
             object.transform = rightTransform
 
         }) { (_) in
-
             UIView.animate(withDuration: 0.2, animations: {
                 object.transform = CGAffineTransform.identity
             })
         }
-    }
-
-     // Pop-up prompt window
-    func prompt() {
-        let sheet = UIAlertController.init(title: "Prompt Message", message: "Please enter your weight(number)", preferredStyle: UIAlertControllerStyle.actionSheet)
-        sheet.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: { (action: UIAlertAction) in
-
-        }))
-        self.present(sheet, animated: true, completion: nil)
-    }
-
-
-    // Pop-up prompt window with animation
-
-    func promptWithAnimation() {
-
-        let alert = UIView.init(frame: CGRect(x: 15, y: 180, width: self.view.frame.width - 30, height: self.view.frame.height / 4 * 3))
-        let keyWindow = UIApplication.shared.keyWindow
-        keyWindow?.addSubview(alert)
-        alert.transform = CGAffineTransform(scaleX: 1.21, y: 1.21)
-        alert.alpha = 0
-        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: UIViewAnimationOptions.curveEaseInOut, animations: {
-            alert.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-            alert.alpha = 1.0
-        }, completion: nil)
     }
     
     var dates: Array<String> = Array()
