@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct userPain: Codable {
+struct UserPain: Codable {
     
     var painLevel: Float = 0
     var date: Date = Date()
@@ -18,7 +18,7 @@ struct userPain: Codable {
         let defaults = UserDefaults.standard
         if let savedPain = defaults.object(forKey: "pain") as? Data {
             let decoder = JSONDecoder()
-            if let loadedPain = try? decoder.decode(Array<userPain>.self, from: savedPain) {
+            if let loadedPain = try? decoder.decode(Array<UserPain>.self, from: savedPain) {
                 userPainHistory = loadedPain
             }
         }
@@ -28,7 +28,7 @@ struct userPain: Codable {
     {
         let defaults = UserDefaults.standard
         let currentDate = Date()
-        let pain = userPain(painLevel: currentPain, date: currentDate)
+        let pain = UserPain(painLevel: currentPain, date: currentDate)
         getUserPainHistory()
         userPainHistory.append(pain)
         let encoder = JSONEncoder()
@@ -47,5 +47,5 @@ struct userPain: Codable {
     
 }
 
-var userPainHistory: Array<userPain> = Array()
+var userPainHistory: Array<UserPain> = Array()
 

@@ -8,8 +8,6 @@
 
 import UIKit
 import Charts
-import HealthKit
-
 
 class WeightMonitorViewController: BasicViewController, UITextFieldDelegate  {
 

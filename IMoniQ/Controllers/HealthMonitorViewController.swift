@@ -51,7 +51,7 @@ class HealthMonitorViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
-        let user = userPain()
+        let user = UserPain()
         user.updateUserPainHistory(currentPain: verticalSlider.value)
     }
     
