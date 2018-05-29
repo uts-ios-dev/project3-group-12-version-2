@@ -117,8 +117,6 @@ class WeightMonitorViewController: BasicViewController, UITextFieldDelegate  {
             if i > -1 {
                 let calendar = Calendar.current
                 let day = calendar.component(.day, from: userWeightHistory[i].date)
-                let hour = calendar.component(.hour, from: userWeightHistory[i].date)
-                let minute = calendar.component(.minute, from: userWeightHistory[i].date)
                 let month = calendar.component(.month, from: userWeightHistory[i].date)
                 
                 let str = "\(day)/\(month)"

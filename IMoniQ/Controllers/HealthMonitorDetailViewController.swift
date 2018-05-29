@@ -45,8 +45,6 @@ class HealthMonitorDetailViewController: UIViewController {
             if i > -1 {
                 let calendar = Calendar.current
                 let day = calendar.component(.day, from: userPainHistory[i].date)
-                let hour = calendar.component(.hour, from: userPainHistory[i].date)
-                let minute = calendar.component(.minute, from: userPainHistory[i].date)
                 let month = calendar.component(.month, from: userPainHistory[i].date)
             
                 let str = "\(day)/\(month)"
