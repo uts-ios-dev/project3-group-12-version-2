@@ -1,5 +1,6 @@
-# project3-group-12-version-2
-Modified version of project for group 12
+# iMoniQ
+*project-group-12-version-2*
+*Modified version of project for group 12*
 
 ### Launch project
 1. Download .zip archive
