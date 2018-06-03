@@ -14,12 +14,16 @@ OR
 
 2. Launch iMoniQ.xcworkspace
 
+**Note:** If possible, use account assigned to University of Technology Sydney Development Team 
+
 ### Possible issues
 Project should compile on XCode >= 9.2, however it is better to use XCode >= 9.3 with Swift 4.1
 
 In case of problems within pods run:
 
 ```pods install```
+
+**Note:** In XCode >= 9.3 there will be warning related to Charts framework. This is due to method ```.flatMap()``` that is deprecated for XCode >= 9.3, however, XCode <= 9.2 does not have method ```.compactMap()```, thus, it must use ```.flatMap()```.
 
 ### Frameworks
 * ResearchKit
