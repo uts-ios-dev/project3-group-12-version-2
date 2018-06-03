@@ -29,6 +29,7 @@ In case of problems within pods run:
 ### Frameworks
 * ResearchKit
 * Charts
-* Firebase
+* Firebase (for LoginAuthentication/Database/Storage)
 * HealthKit
-* CoreData
+* AVKit
+* SDWebImage
